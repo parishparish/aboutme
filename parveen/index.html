@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" >
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $(".aboutS").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = $("#about-section");
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("#contect").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = $("#contact");
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+</head>
+<body>
+        <div id="particles-js" class="container-fluid"></div>
+        <script src="src/particles.js-master/particles.js"></script>
+        <script src="src/particles.js-master/demo/js/app.js"></script>
+        <div class="header container-fluid">
+          <nav class="navbar">
+              <ul class="nav navbar-nav">
+                  <li class="navbar-brand jordan"><a href="#" >Jordan</a></li>
+              </ul>
+                <ul class="nav  navbar-nav navbar-right">
+                    <li class="nav-item">
+                        <a href="#content" class="nav-link" id="contect">Contact</a>
+                    </li>
+                </ul>
+             </nav>
+       </div>
+       <div class="name-con">
+        <div class="profile-name">PARVEEN KUMAR</div>
+        <a href="#about-section" class="aboutS">ABOUT</a>
+     </div>
+    <div class="container-fluid bg-dd" id="about-section">
+      <div class="row">
+        <div class="projects col-sm-12">
+        <div class="textt">
+        <h1>Hello I am Parveen, I am a web Developer and a Programmer</h1>
+        <p>
+          <strong>-links of  Projects that i've done.</strong></p>
+          <ul>
+            <li><a target="_blank" href="http://www.Tatvarcdu.in">Tatva:-</a></li>
+            <li> <a target="_blank" href="http://www.bigthinker.epizy.com/charla/">Solar system explorer app:-</a></li>
+            <li><a target="_blank" href="http://www.tuby.epizy.com"> Youtube Video Downloader:-</a></li>
+          </ul>
+         <p>
+          <cite>Success is a lousy teacher. It seduces smart people into thinking they can't lose.</cite>
+          -bill Gates
+         </p>
+        </div>
+      </div>
+        <div class="profile-img col-sm-2">
+          <img src="profile.jpeg" alt="" class="img-thumbnail responsive ">
+        </div>
+        <div class="table-de col-sm-10">
+           <table class="table table-borderless">
+             <tbody>
+               <tr>
+                 <td>Name:</td>
+                 <td>Parveen Kumar</td>
+               </tr>
+               <tr>
+                 <td>Email:</td>
+                 <td>pk64006@gmail.com</td>
+               </tr>
+               <tr>
+                 <td>Phone:</td>
+                 <td>8802684386</td>
+               </tr>
+               <tr>
+                 <td>Date of Birth:</td>
+                 <td>5-Sep-1997</td>
+               </tr>
+               <tr>
+                 <td>Nationality:</td>
+                 <td>Indian</td>
+               </tr>
+               <tr>
+                 <td>Address:</td>
+                 <td>South West delhi,India-110043</td>
+               </tr>
+             </tbody>
+           </table>
+        </div>
+   </div>
+  </div>
+        <footer class="footer" id="contact">
+         <div class="links">
+         <a href="mailto:pk64006@gmail.com"  class="fa fa-envelope-o" style="font-size:48px;color:rgb(255, 255, 255)"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <a href="https://www.github.com/parishparish" class="fa fa-github-square" style="font-size:48px;color:whitesmoke"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <a href="https://www.linkedin.com/in/parveen-kumar-43565110a" class="fa fa-linkedin-square" style="font-size:48px;color:white"></a>
+        </div>
+       </footer>
+
+</body>
+</html>
